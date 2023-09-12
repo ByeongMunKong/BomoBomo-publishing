@@ -1,0 +1,111 @@
+.header{
+    width: 100%;
+    height: 100%;
+}
+
+/* 헤더 전체영역 컨테이너 */
+.header-contaier {
+    display: flex;
+    
+    width: 1024px;
+    margin: 0 auto;
+}
+
+
+/* 로고 영역 */
+.logo-container {
+  
+   /* border: 2px solid red; */
+    width: 200px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15em;
+
+}
+
+/* 로고 설정 */
+.logo-container  h1:nth-child(1),
+.logo-container  h1:nth-child(2) {
+    color:#0ba891;
+    font-family: "Luckiest Guy", cursive;
+    position: relative;
+
+
+}
+/* 로고 첫번째 BOMO 설정 */
+.logo-container  h1:nth-child(1) {
+    /* border: 2px solid black; */
+    width: 200px;
+    top: 15px;
+    transform: rotateZ(-3deg);
+
+}
+/* 로고 두번째 BOMO 설정 */
+
+.logo-container  h1:nth-child(2)  {
+  /* border: 2px solid blue; */
+  right: -90px;
+  top:-20px;
+  transform: rotateZ(-8deg);
+}
+
+
+/* 메인메뉴설정  */
+.nav-container nav ul {
+
+    box-sizing: border-box;
+    display: flex;
+    padding: 20px;
+    align-items: last baseline;
+    /* border: 2px solid darkolivegreen; */
+    width: 530px;
+    height: 90px;
+}
+
+.nav-container nav ul li {
+    width: 100%;
+}
+
+
+
+
+/* 로그인/회원가입 설정 */
+.right-menu-container {
+    width: 294px;
+    /* border: 2px solid darkcyan; */
+}
+
+.right-menu-container ul {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+    padding: 20px 0 20px 20px;
+    box-sizing: border-box;
+    width: 190px;
+    height: 90px;
+    /* border: 2px solid red; */
+
+}
+
+.right-menu-container ul li {
+    text-align: center;
+    width: 100px;
+    /* border: 2px solid red; */
+    
+}
+
+
+.nav-container nav ul li a, 
+.right-menu-container ul li a {
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+}
