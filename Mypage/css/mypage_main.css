@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Dongle&family=Gamja+Flower&family=IBM+Plex+Sans+KR&family=Single+Day&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    /* background-color: aquamarine; */
+    
+    
+}
+
+.mypage-container{
+    width: 1024px;
+    height: 100%;
+    /* border: 1px solid black;   */
+    margin: 0 auto;
+
+}
+.section{
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+    height: 100%;
+    /* width: 1024px; */
+    display: flex;
+}
+.menu-bar{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    border: 1px solid black;
+    /* background-color: red; */
+    height: 600px;
+    width: 150px;
+    margin-left: 10px;
+}
+.menu-bar>div{
+    margin: 20px auto;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10%;
+    width: 100px;
+    height: 30px;
+}
+
+.menu-bar>div>a{
+    text-decoration: none;
+    line-height: 30px;
+    color: black;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: 25px;
+}
+
+.page-view{
+    /* border: 1px solid black; */
+    /* background-color: blue; */
+    
+    margin-left: 20px;
+}
+.user-area{
+    /* border: 1px solid rebeccapurple; */
+    height: 150px;
+    border-bottom: 1px solid #666;
+
+}
+.user-area-container{
+    display: flex;
+    border-radius: 10%;
+    height: 100px;
+    margin-top: 30px;
+    width: 800px;
+    margin: 30px  auto;
+    /* background-color:#e7e7e7; */
+
+}
+.user-area-container>div{
+    /* border: 1px solid black; */
+}
+.userimg{
+    width: 60px;
+    margin-left: 100px;
+    /* background-color: black; */
+}
+.userimg>img{
+    border: 1px solid #666;
+    margin-top: 10px;
+    width: 80px;
+    border-radius: 10%;
+    /* background-color: black; */
+    
+}
+.username{
+    margin-left: 30px;
+}
+.username>p:first-child{
+    margin-top: 20px;
+    /* border: 1px solid black;s */
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: 30px;
+}
+.username>p:last-child{
+    /* border: 1px solid black; */
+    margin-top: -10px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: 20px;
+}
+
+.application{
+    margin-left: 400px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.siterinfo-area{
+    border: 1px solid black;
+    height: 300px;
+}
+.siterinfo-area-container{
+    border: 1px solid black;
+    width: 700px;
+    margin: 20px auto;
+    height: 250px;
+}
+
