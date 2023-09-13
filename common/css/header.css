@@ -1,14 +1,26 @@
 .header{
+    
     width: 100%;
     height: 100%;
 }
 
+.header-wrap{
+
+    height: 90px;
+   
+}
 /* 헤더 전체영역 컨테이너 */
 .header-contaier {
-    display: flex;
-    
-    width: 1024px;
+    z-index:999999;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    min-width: 1024px;
+    width: 100%;    
+    background-color: white;
+    border-bottom: 2px solid #dfb015;
+   
 }
 
 
@@ -28,7 +40,7 @@
 /* 로고 설정 */
 .logo-container  h1:nth-child(1),
 .logo-container  h1:nth-child(2) {
-    color:#0ba891;
+    color:#dfb015;
     font-family: "Luckiest Guy", cursive;
     position: relative;
 
@@ -51,7 +63,6 @@
   transform: rotateZ(-8deg);
 }
 
-
 /* 메인메뉴설정  */
 .nav-container nav ul {
 
@@ -67,6 +78,38 @@
 .nav-container nav ul li {
     width: 100%;
 }
+.main-menu {
+    /* border: 2px solid red; */
+}
+
+#downMenu{
+    position: relative;
+}
+
+.sub-menu {
+    /* border: 2px solid red; */
+    position: absolute;
+    background-color: white;
+    font-size: 13px;
+    height: 150px;
+
+
+}
+.sub-menu dt {
+    display: none;
+}
+
+.sub-menu dd:hover{
+    border-bottom: 1px solid gray;
+}
+
+
+
+
+
+
+
+
 
 
 
