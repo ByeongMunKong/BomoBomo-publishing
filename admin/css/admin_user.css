@@ -58,6 +58,7 @@ a{
     height: 100%;
 }
 .main-header{
+    align-items: center;
     height: 50px;
     width: 988px;
     display:flex;
@@ -100,6 +101,7 @@ a{
     border: none;
     border-radius: 10%;
     width: 100px;
+    height: 40px;
     cursor: pointer;
     color: white;
     background-color: rgb(172, 185, 202);
