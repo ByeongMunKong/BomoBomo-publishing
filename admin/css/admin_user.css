@@ -48,7 +48,8 @@ a{
 }
 
 .on{
-    background-color:#01b9ff;
+    background-color:#01b9ff !important;
+    color: white;
 }
 
 .main-container{
@@ -106,4 +107,171 @@ a{
     color: white;
     background-color: rgb(172, 185, 202);
     margin-left: auto;
+}
+.user-main-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 80%;
+    margin: 30px auto 0px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px gray;
+    border-radius: 3%;
+}
+.top{
+    width: 100%;
+    /* margin: 0 auto; */
+    /* padding-top: 10px 10px; */
+    padding: 10px;
+    display: flex;
+    font-size: 20px;
+    width: 96%;
+    margin: 0 auto;
+    border-bottom: 3px solid #01b9ff;
+}
+.top>div{
+    font-weight: bold;
+    font-size: 21px;
+    color: #353535;
+}
+
+.top .user-num{
+    margin-right: auto;
+}
+.top .user-name{
+    margin-left: 60px;
+}
+.top .user-id{
+    margin-left: 60px;
+}
+.top .date{
+    margin-left: 100px;
+}
+.top .review{
+    margin-left: 100px;
+}
+.top .status{
+    margin-left: 100px;
+}
+.user-list{
+    height: 100%;
+}
+.user-list > div {
+    display: flex;
+    margin: 0 auto;
+    width: 98%;
+    border-bottom:1px solid #ddd;
+}
+
+.board-list > div:last-child{
+    border-bottom: 1px solid #999;
+}
+.post{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 67px;
+    font-size: 18px;
+}
+
+.post>div{
+    cursor: pointer;
+}
+.post .user-num{
+    
+    width: 12%;
+
+}
+.post .user-name{
+    width: 15%;
+
+}
+.post .user-id{
+    width: 10%;
+}
+.post .date{
+    width: 29%;
+}
+.post .review{
+    width: 9%;
+}
+.post .status{
+    margin-left: auto;
+    width: 18%;
+}
+
+.user-list-bottom{
+    margin-top: 10px;
+    display: flex;
+}
+
+.user-search-container > form{
+    height: 90px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+form > select{
+    margin-top: 10px;
+    margin-right: 3px;
+}
+
+form > input{
+    margin-top: 10px;
+}
+
+form > button{
+    cursor: pointer;
+    border: 1px solid black;
+    width: 45px;
+    height: 20px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.pagination-container {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-right: 5px;
+    width: 500%;
+}
+
+.pagination-container a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-left: 0;
+    line-height: 100%;
+    font-size: 15px;
+}
+
+.bt{
+    background-color:white;
+}
+
+.pagination-container a.bt {
+    padding-top: 9px;
+}
+
+.pagination-container a.num {
+    padding-top: 9px;
+    font-size: 15px;
+}
+
+
+.pagination-container a:first-child {
+    border-left: 1px solid #ddd;
+}
+
+.user-search-container{
+    margin: auto 33px auto 30px;
+    width: 35%;
 }
