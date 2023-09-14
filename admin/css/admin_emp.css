@@ -2,7 +2,10 @@
     margin: 0px;
     padding: 0px;
 }
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
 .admin-container{
     display: flex;
     margin :auto ;
@@ -55,13 +58,14 @@
     height: 100%;
 }
 .main-header{
+    align-items: center;
     height: 50px;
     width: 988px;
     display:flex;
     background-color: white;
     /* border:1px solid red; */
     padding: 5px;
-
+    box-shadow: 0px 0px 3px 0px gray;
     border: 1px solid #e6e6e6;
 }
 .main-header-title{
@@ -74,6 +78,16 @@
     margin-top: 5px;
     height: 100%;
 }
+.contents-title{
+    margin: 0px 20px;
+    width: 96%;
+    border-bottom: 1px solid #353535;
+}
+
+.contents-title > span{
+    color: #646464;
+    font-size: 30px;
+}
 .admin-name{
     margin-left: auto;
     width: 50px;
@@ -85,6 +99,7 @@
     border: none;
     border-radius: 10%;
     width: 100px;
+    height: 40px;
     cursor: pointer;
     color: white;
     background-color: rgb(172, 185, 202);
