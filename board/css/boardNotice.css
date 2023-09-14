@@ -1,0 +1,74 @@
+.Notice-container {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+
+  padding-top: 30px;
+  width: 1024px;
+  margin: 0 auto;
+}
+.Notice-container h3{
+  /* border-top:1px solid gray; */
+  border-bottom: 1px solid gray;
+
+  /* border: 2px solid red; */
+  padding: 15px 15px 15px 0;
+}
+
+
+.board-table th{
+    border-bottom: 1px solid gray;
+    
+}
+
+.board-number, .board-count {
+    width: 50px;
+    height: 50px;
+}
+
+.board-title {
+    width: 724px;
+}
+
+.board-user-id {
+    width: 120px;
+}
+
+.board-date {
+    width: 130px;
+}
+
+.board-table tr td{
+    height: 35px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.336);
+}
+.board-table tr td a {
+    display: block;
+    color: black;
+}
+
+.board-table tr td:nth-child(1),
+.board-table tr td:nth-child(3),
+.board-table tr td:nth-child(4),
+.board-table tr td:nth-child(5){
+    text-align: center;
+}
+
+.board-pagenation-container {
+    padding-top: 30px;
+}
+.board-pagenation-container ul {
+    display: flex;
+    justify-content: center;
+}
+
+.board-pagenation-container ul li {
+    text-align: center;
+    width: 30px;
+
+}
+
+.board-pagenation-container ul li a {
+    color: black;
+    display: block;
+    font-size: 17px;
+    border: 1px solid gray;
+}

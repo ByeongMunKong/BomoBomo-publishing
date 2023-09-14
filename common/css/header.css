@@ -19,7 +19,7 @@
     min-width: 1024px;
     width: 100%;    
     background-color: white;
-    border-bottom: 2px solid #dfb015;
+    border-bottom: 2px solid #FF7000;
    
 }
 
@@ -40,7 +40,7 @@
 /* 로고 설정 */
 .logo-container  h1:nth-child(1),
 .logo-container  h1:nth-child(2) {
-    color:#dfb015;
+    color:#FF7000;
     font-family: "Luckiest Guy", cursive;
     position: relative;
 
