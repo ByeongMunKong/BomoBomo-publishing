@@ -101,58 +101,19 @@ main{
     color: #0ba891;;
 }
 
-.user{
-    border: 1px solid red;
-    margin: auto;
-
-}
-.inputText input{
-    width : 330px;
-    height: 30px;
-    margin-bottom: 10px;
+.updateText{
+    margin-top: 40px;
+    border: 1px solid black;
+    height: 500px;
 }
 
-.buttonJoin button{
-    width : 355px;
-    height: 40px;
-    margin-top: 30px;  
-    cursor: pointer;
-    color: white;
-    background-color: #0ba891;
-    border: 0px solid black;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 20px;
+.userInfo-area{
+    /* border: 1px solid black; */
+    height: 50px;
+    text-align: center;
+    /* width: 80px; */
 }
-
-.manageGroup{
-    width: 840px;
-    height: 750px;   
-    display: table;
-    /* border-collapse: collapse; */
-    border: 1px solid black;  
-    margin: 10px auto;
-}
-
-.userInfo {
-    width: 350px;
-    border-radius: 5px;
-    border: 1px solid #bbb;
-    text-indent: 25px;
-    padding: 10px 12px;
-    font-size: 14px;
-}
-
-.userInfoText {
-    position: relative;
-    width: 300px;
-  }
-
-.userInfoText img {
-    position : absolute;
-    width: 20px; 
-    /* width: 50px; */
-    top: 15px;
-    left: 12px;
-    margin: 0;
+.userInfo{
+    width: 400px;
+    margin-top: 20px;
 }

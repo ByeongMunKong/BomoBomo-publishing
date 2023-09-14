@@ -43,52 +43,42 @@
                             <!-- 회원 정보 등록 -->
                             <div class="user">
                                 <div class="manageGroup">
-                                    <div class="inputText">
-                                        <div class="userInfoText">
-                                            <img src="../img/userId.png">
+                                    <div class="updateText">
+                                        <div class="userInfo-area">
                                             <input class="userInfo" type="text" placeholder="아이디" disabled>
                                             <!-- <label>로그인 X</label> -->
+                                            
                                         <!--아이디 수정-->
-                                        <div class="userInfoText">
-                                            <img src="../img/userId.png">
-                                            <input class="userInfo" type="text" placeholder="아이디">
-                                           
                                         </div>
-                                        <div class="userInfoText">
-                                            <img src="../img/userPw.png">
+                                        <div class="userInfo-area">
                                             <input class="userInfo" type="password" placeholder="비밀번호">
-                                            <!-- <label>비번 X</label> -->
+                                            <p>유효하지 않은 비밀번호입니다.</p>
                                         </div>
-                                        <div class="userInfoText">
-                                            <img src="../img/userPw.png">
+                                        <div class="userInfo-area">
                                             <input class="userInfo" type="password" placeholder="비밀번호 체크">
-                                            <!-- <label>비번 X</label> -->
+                                            <p>비밀번호가 일치하지 않습니다.</p>
                                         </div>
-                                        <div class="userInfoText">
-                                            <img src="../img/userId.png">
-                                            <input class="userInfo" type="text" placeholder="이름">
+                                        <div class="userInfo-area">
+                                            <input class="userInfo" type="text" placeholder="이름" disabled>
                                         </div>
-                                        <div class="userInfoText">
-                                            <img src="../img/email.png">
-                                            <input class="userInfo" type="email" placeholder="이메일">
-                                        </div>
-                                        <div class="userInfoText">
-                                            <img src="../img/phone.png">
+                                        <div class="userInfo-area">
                                             <input class="userInfo" type="text" placeholder="휴대폰번호">
                                         </div>
-                                        <!-- <div class="userInfoText">
-                                            <img src="../img/userId.png">
-                                            <input class="userInfo" type="" placeholder="주소">
-                                        </div> -->
-                                        <input type="text" id="address" placeholder="주소 입력" maxlength="100" style="width: 330px; margin-bottom: 20px;">
-                                        <button type="button" id="PostCodeSearch" onclick="PostCodeSearch()">주소찾기</button>
-                                        <input type="text" id="address_detail" placeholder="상세주소 입력" maxlength="100" > 
+                                        <div class="userInfo-area">
+                                            <input class="userInfo" type="email" placeholder="이메일">
+                                        </div>
+                                        <div class="userInfo-area">
+                                            <input type="text" class="addressInput" id="address" placeholder="주소 입력" maxlength="100" style="width: 330px; margin-bottom: 20px;">
+                                            <button type="button" id="PostCodeSearch" onclick="PostCodeSearch()">주소찾기</button>
+                                            <br/>
+                                            <input type="text" class="addressdetail" id="address_detail" placeholder="상세주소 입력" maxlength="100" > 
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- 회원 정보 등록 -->
+                                <!-- 회원 정보 수정 -->
                                 
                                 <div class="buttonJoin">
-                                    <button>수정하기</button>
+                                    <button>수정완료</button>
                                 </div>
                             </div>
                         </form>
@@ -100,14 +90,17 @@
     </div>
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" defer></script>
 <script>     
-    function PostCodeSearch(){
-        new daum.Postcode({
+   window.onload = function() {
+
+document.getElementById("PostCodeSearch").onclick = function PostCodeSearch() {
+    new daum.Postcode({
         oncomplete: function(data) {
             console.log(data);
             document.querySelector('#address').value = data.roadAddress;
         }
-        }).open();
-       }
+    }).open();
+}
+}
 </script>              
 </body>
 </html>
