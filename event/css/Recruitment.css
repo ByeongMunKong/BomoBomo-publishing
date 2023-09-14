@@ -16,7 +16,7 @@
     height: 700px;
     background-color: aqua;
     margin: 0 auto;
-    border: 0px solid black;   
+    border: 5px solid black;   
     position: relative; /* 위치 지정을 위해 부모 요소에 상대 위치 지정 */
     text-align: center; /* 텍스트를 가로 중앙 정렬 */
 }
@@ -37,6 +37,33 @@
     margin: 0; /* 왼쪽 여백을 0으로 설정하여 시작점을 왼쪽 상단으로 맞춤 */
     /* 추가적인 스타일링을 필요에 따라 적용하세요. */
     text-align: left;
-    
+    min-width: 1024px;    
+}
+
+.Recruitment-into
+{    
+    float: left;
+    min-width: 1024px;
+    width: 100%;
+    height: 700px;
+    background-color: aqua;
+    margin: 0 auto;
+    border: 5px solid black;   
+    position: relative; /* 위치 지정을 위해 부모 요소에 상대 위치 지정 */
+    text-align: center; /* 텍스트를 가로 중앙 정렬 */
+}
+
+.Recruitment-into-left{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(95, 29, 119);
+    float: left;
+}
+
+.Recruitment-into-right{
+    float: left;
+    width: 700px;
+    height: 600px;
+    background-color: rgb(75, 13, 42);
 }
 
