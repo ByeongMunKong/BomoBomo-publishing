@@ -1,7 +1,7 @@
 .header{
     
     width: 100%;
-    height: 100%;
+    height: 90px;
 }
 
 .header-wrap{
@@ -38,30 +38,21 @@
 }
 
 /* 로고 설정 */
-.logo-container  h1:nth-child(1),
-.logo-container  h1:nth-child(2) {
+.logo-container  h1 {
+    font-size: 2.6em;
     color:#FF7000;
-    font-family: "Luckiest Guy", cursive;
-    position: relative;
+    font-weight: bold;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;    position: relative;
 
 
 }
 /* 로고 첫번째 BOMO 설정 */
-.logo-container  h1:nth-child(1) {
-    /* border: 2px solid black; */
-    width: 200px;
-    top: 15px;
-    transform: rotateZ(-3deg);
 
-}
-/* 로고 두번째 BOMO 설정 */
 
-.logo-container  h1:nth-child(2)  {
-  /* border: 2px solid blue; */
-  right: -90px;
-  top:-20px;
-  transform: rotateZ(-8deg);
-}
 
 /* 메인메뉴설정  */
 .nav-container nav ul {

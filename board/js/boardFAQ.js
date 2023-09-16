@@ -46,6 +46,9 @@ $(document).ready(function() {
             var $arrow = $(this).children('span');
             $arrow.toggleClass('rotated');
             
+
+            //화살표에 rotated 클래스부여
+            //rotated 클래스가 있으면 180도 회전
             if ($arrow.hasClass('rotated')) {
                 $arrow.css({'transform':'rotate(180deg)'});
             } else {
