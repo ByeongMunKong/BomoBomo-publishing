@@ -50,7 +50,6 @@
 
 
 }
-/* 로고 첫번째 BOMO 설정 */
 
 
 
@@ -61,7 +60,6 @@
     display: flex;
     padding: 20px;
     align-items: last baseline;
-    /* border: 2px solid darkolivegreen; */
     width: 530px;
     height: 90px;
 }
@@ -69,9 +67,7 @@
 .nav-container nav ul li {
     width: 100%;
 }
-.main-menu {
-    /* border: 2px solid red; */
-}
+
 
 #downMenu{
     position: relative;
@@ -81,16 +77,28 @@
     /* border: 2px solid red; */
     position: absolute;
     background-color: white;
-    font-size: 13px;
     height: 150px;
-
 
 }
 .sub-menu dt {
     display: none;
 }
+.sub-menu dd {
+    height: 40px;
+}
+.sub-menu dd> a {
+    display: inline;
+    height: 35px;
+    font-size: 16px;
+    color: rgb(122, 122, 122);
+    font-weight: normal;
+    font-family: 'IBM Plex Sans KR', sans-serif !important;
 
-.sub-menu dd:hover{
+}
+
+.sub-menu dd a:hover{
+    color: black;
+    font-weight: bold;
     border-bottom: 1px solid gray;
 }
 
@@ -132,7 +140,7 @@
 }
 
 
-.nav-container nav ul li a, 
+.nav-container nav ul li> a, 
 .right-menu-container ul li a {
     font-size: 2em;
     color: black;
