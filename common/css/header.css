@@ -89,11 +89,14 @@
 .sub-menu dd> a {
     display: inline;
     height: 35px;
-    font-size: 16px;
+    font-size: 1.4em;
     color: rgb(122, 122, 122);
     font-weight: normal;
-    font-family: 'IBM Plex Sans KR', sans-serif !important;
-
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;    position: relative;
 }
 
 .sub-menu dd a:hover{

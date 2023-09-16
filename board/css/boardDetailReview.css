@@ -1,0 +1,157 @@
+.review-detail-container {
+    padding-top: 50px;
+    width: 1024px;
+    margin: 0 auto;
+    
+}
+
+/* 리뷰대상자(시터) 정보가 담긴 영역 */
+.review-detail-sitter {
+    
+    display: flex;
+}
+
+.revie-detail-sitter-pic {
+    width: 600px;
+}
+.revie-detail-sitter-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+.review-detail-sitter-info {
+    display: flex;
+    align-items: end;
+    width: 424px;
+}
+.review-detail-sitter-name >dt {
+    padding: 30px 30px 10px 30px;
+}
+
+.review-sitter-avg-score  {
+    padding: 0px 10px 10px 30px;
+    height: 30px;
+    display: flex;
+
+}
+
+.review-detail-sitter-info :nth-child(2) span {
+    font-size: 15px
+    
+}
+.review-detail-sitter-info dd img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+/* 작성된 리뷰에 관한 정보가 담긴 영역
+리뷰 평점 / 작성일자 작성자 내용 등 */
+.review-detail-content {
+
+    /* border: 2px solid red; */
+    width: 1024px;
+    height: 100%;
+}
+
+.review-score-date ul {
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 1024px;
+    height: 40px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.review-score-date ul li {
+    height: 20px;
+}
+.review-score-date ul li img {
+    /* border: 2px solid burlywood; */
+    height: 20px;
+}
+.review-score-date ul li:nth-child(2){
+    letter-spacing: 3px;
+    text-align: center;
+    width: 70px;
+    /* border: 2px solid blue; */
+}
+.review-score-date ul li:nth-child(3){
+    width: 954px;
+    /* border: 2px solid darkorange; */
+    text-align: end;
+}
+
+.review-userid {
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.42);
+}
+
+.review-user-content {
+    font-size: 13.5px;
+    padding: 20px;
+    line-height: 2.5;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.571);
+}
+.update-delete-btn {
+    box-sizing: border-box;
+    /* border: 2px solid blue; */
+    width: 1024px;
+    padding: 20px;
+    text-align: end;
+}
+
+.updateBtn, .deleteBtn, .reviewListBtn {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+}
+
+
+
+
+
+/* 리뷰 댓글 */
+.review-reply  {
+    padding-top: 90px;
+    border-top: 1px solid gray;
+}
+.review-reply dl {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.471);
+}
+.review-reply dl dt {
+    font-size: 14px;
+    width: 150px;
+    padding: 20px;
+}
+
+.review-reply dl dd:nth-child(2){
+    font-size: 13px;
+    padding: 20px;
+    width: 670px;
+}
+
+/* 리뷰 댓글 삭제/수정 */
+.reply-update-btn, 
+.reply-delete-btn
+ {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.review-reply dl dd:nth-child(3),
+.review-reply dl dd:nth-child(4){
+    /* border: 1px solid blue; */
+    width: 60px;
+    height: 35px;
+}
