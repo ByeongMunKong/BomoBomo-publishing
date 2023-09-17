@@ -1,4 +1,6 @@
 .review-detail-container {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+
     padding-top: 50px;
     width: 1024px;
     margin: 0 auto;
@@ -60,6 +62,8 @@
 }
 
 .review-score-date ul {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+
     box-sizing: border-box;
     padding: 10px;
     display: flex;
