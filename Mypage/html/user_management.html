@@ -21,6 +21,9 @@
         <div class="user-container">
             <div class="section">
                 <aside class="menu-bar">
+                    <a href="/Mypage/html/mypage_main.html" class="logo-img">
+                        <img src="/Mypage/img/logo.png">
+                    </a>
                     <div class="announcement">
                         <!--클릭시  페이지 이동-->
                        <a href="#">공지사항</a> 
@@ -29,10 +32,10 @@
                         <a href="#">FAQ</a> 
                     </div>
                     <div class="pay">
-                        <a href="#">결제내역</a>
+                        <a href="/Mypage/html/buy_page.html">결제내역</a>
                     </div>
                     <div class="account-mg">
-                        <a href="#">계정관리</a>
+                        <a href="/Mypage/html/user_management.html">계정관리</a>
                     </div>
                 </aside>
                 <div class="page-view">
@@ -43,52 +46,47 @@
                             <!-- 회원 정보 등록 -->
                             <div class="user">
                                 <div class="manageGroup">
-                                    <div class="inputText">
-                                        <div class="userInfoText">
-                                            <img src="../img/userId.png">
-                                            <input class="userInfo" type="text" placeholder="아이디" disabled>
+                                    <div class="updateText">
+                                        <div class="userInfo-area">
+                                            <!-- <img src="/user/img/userId.png"> -->
+                                            <input class="userInfo" type="text" placeholder="ics6064" disabled>
                                             <!-- <label>로그인 X</label> -->
+                                            
                                         <!--아이디 수정-->
-                                        <div class="userInfoText">
-                                            <img src="../img/userId.png">
-                                            <input class="userInfo" type="text" placeholder="아이디">
-                                           
                                         </div>
-                                        <div class="userInfoText">
-                                            <img src="../img/userPw.png">
-                                            <input class="userInfo" type="password" placeholder="비밀번호">
-                                            <!-- <label>비번 X</label> -->
+                                        <div class="userInfo-area">
+                                            <input class="userInfo" type="password" placeholder="비밀번호" required>
+                                            <p class="checkPw">유효하지 않은 비밀번호입니다.</p>
                                         </div>
-                                        <div class="userInfoText">
-                                            <img src="../img/userPw.png">
-                                            <input class="userInfo" type="password" placeholder="비밀번호 체크">
-                                            <!-- <label>비번 X</label> -->
+                                        <div class="userInfo-area">
+                                            <input class="userInfo" type="password" placeholder="비밀번호 체크" required>
+                                            <p class="checkPw">비밀번호가 일치하지 않습니다.</p>
                                         </div>
-                                        <div class="userInfoText">
-                                            <img src="../img/userId.png">
-                                            <input class="userInfo" type="text" placeholder="이름">
+                                        <div class="userInfo-area">
+                                            <input class="userInfo" type="text" placeholder="김성찬" disabled>
                                         </div>
-                                        <div class="userInfoText">
-                                            <img src="../img/email.png">
-                                            <input class="userInfo" type="email" placeholder="이메일">
+                                        <div class="userInfo-area">
+                                            <input class="userInfo" type="text" placeholder="휴대폰번호" required>
                                         </div>
-                                        <div class="userInfoText">
-                                            <img src="../img/phone.png">
-                                            <input class="userInfo" type="text" placeholder="휴대폰번호">
+                                        <div class="userInfo-area">
+                                            <input class="userInfo" type="email" placeholder="이메일" required>
                                         </div>
-                                        <!-- <div class="userInfoText">
-                                            <img src="../img/userId.png">
-                                            <input class="userInfo" type="" placeholder="주소">
-                                        </div> -->
-                                        <input type="text" id="address" placeholder="주소 입력" maxlength="100" style="width: 330px; margin-bottom: 20px;">
-                                        <button type="button" id="PostCodeSearch" onclick="PostCodeSearch()">주소찾기</button>
-                                        <input type="text" id="address_detail" placeholder="상세주소 입력" maxlength="100" > 
+                                        <div class="userInfo-area">
+                                            <input type="text" class="addressnum" id="address-num" placeholder="우편번호" >
+                                            <button type="button" class="addressnumbtn" value="우편번호 찾기" onclick="addressFind()">우편번호</button>
+                                            <br/> 
+                                            <input type="text" class="addressInput" id="address" placeholder="주소 입력" >
+                                            <br/>
+                                            <input type="text" class="addressplus" id="address_extra" placeholder="참고주소" >
+                                            <input type="text" class="addressdetail" id="address_detail" placeholder="상세주소 입력" > 
+
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- 회원 정보 등록 -->
+                                <!-- 회원 정보 수정 -->
                                 
                                 <div class="buttonJoin">
-                                    <button>수정하기</button>
+                                    <button>수정완료</button>
                                 </div>
                             </div>
                         </form>
@@ -100,14 +98,56 @@
     </div>
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js" defer></script>
 <script>     
-    function PostCodeSearch(){
+ /*우편번호 찾기 코드*/
+   function addressFind() {
         new daum.Postcode({
-        oncomplete: function(data) {
-            console.log(data);
-            document.querySelector('#address').value = data.roadAddress;
-        }
+            oncomplete: function(data) {
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+
+                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var addr = ''; // 주소 변수
+                var extraAddr = ''; // 참고항목 변수
+
+                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    addr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    addr = data.jibunAddress;
+                }
+
+                // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                if(data.userSelectedType === 'R'){
+                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                    // 건물명이 있고, 공동주택일 경우 추가한다.
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                    if(extraAddr !== ''){
+                        extraAddr = ' (' + extraAddr + ')';
+                    } console.log(extraAddr);
+                    // 조합된 참고항목을 해당 필드에 넣는다.
+                    document.getElementById('address_extra').value = extraAddr;
+                
+                } else {
+                    document.getElementById('address_extra').value = '';
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('address-num').value = data.zonecode;
+                document.getElementById('address').value = addr;
+                // 커서를 상세주소 필드로 이동한다.
+                document.getElementById('address_detail').focus();
+            }
         }).open();
-       }
-</script>              
+        console.log("성공!");
+    }
+
+</script>           
 </body>
 </html>
