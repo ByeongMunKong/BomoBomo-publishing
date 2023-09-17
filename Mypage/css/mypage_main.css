@@ -40,6 +40,16 @@ main{
     margin-left: 10px;
     margin-bottom: 15px;
 }
+.menu-bar>div:first-child{
+    width: 180px;
+    height: 100px;
+    margin: 0;
+    border: none;
+  }
+  .logo-img>img{
+    height: 100px;
+    width: 170px;
+}
 .menu-bar>div{
     /* background-color: rgb(255, 255, 255); */
     /* background-color: black; */
@@ -286,7 +296,7 @@ main{
     border: 1px solid black;
     height: 300px;
     width: 800px;
-    display: none;
+    
    
 }
 
@@ -298,8 +308,9 @@ main{
     
    
 }
-.top{
-    background-color: #0ba891;
+.top>td{
+    background-color:#0ba891;
+    
 }
 .review-text>td{
     border: 1px solid black;
@@ -346,8 +357,8 @@ main{
     width: 20px;
     text-align: center;
     font-weight: bold;
-    background-color: #e6e6e6;
-    border: 1px solid #0ba891;;
+    /* background-color: #e6e6e6; */
+    border: 1px solid #0ba891;
 }
 
 /*css 비슷한 지점*/
