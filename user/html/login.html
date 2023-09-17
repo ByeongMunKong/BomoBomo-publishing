@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/login.css" />
+
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- <link rel="shortcut icon" type="image/x-icon" href="/common/img/logoPic.png" alt="타이틀 로고" /> -->
@@ -39,19 +40,19 @@
                                 <div class="inputText">
                                     <div class="userInfoText">
                                         <img src="../img/userId.png">
-                                        <input class="userInfo" type="text" placeholder="아이디">
-                                        <label>로그인 X</label>
+                                        <input class="userInfo" type="text" id="id" name="id" placeholder="아이디">
+                                        <label class="labelId">로그인 X</label>
                                     </div>
                                     <div class="userInfoText">
                                         <img src="../img/userPw.png">
-                                        <input class="userInfo" type="password" placeholder="비밀번호">
-                                        <label>비번 X</label>
+                                        <input class="userInfo" type="password" id="pw" name="pw"placeholder="비밀번호">
+                                        <label class="labelPw">비번 X</label>
                                     </div>
                                 </div>
 
                             </div>
                             <div class="buttonLogin">
-                                <button>로그인</button>
+                                <button class="loginBtn">로그인</button>
                             </div>
                         </div>
                         <!-- 유저 로그인 -->
@@ -77,6 +78,10 @@
     <div class="footer">
         푸터임미다.
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 
 </html>
