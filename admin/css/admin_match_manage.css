@@ -117,7 +117,7 @@ input:focus{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.user-detail-container{
+.match-manage-container{
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -128,68 +128,26 @@ input:focus{
     border:3px solid #01b9ff;
     border-radius: 3%;
 }
-
-.detail-title{
-    font-weight: bold;
-    font-size: 30px;
-    margin-top:20px;
-    text-align: center;
-}
-.detail-info{
+.info-container{
     display: flex;
-    width: 95%;
-    height: 80%;
-    margin: 0 auto;
+    height: 50%;
 }
-.detail-side{
-    padding: 20px;
-    list-style-type: none;
-    width: 150px;
-    margin: 50px;
-    border-right: 3px solid #01b9ff;
-    text-align: center;
+.user-info{
+    border: 3px solid #01b9ff;
+    border-radius: 5%;
+    margin: 20px;
+    padding: 20px 0px 0px 20px;
+    width: 45%;
+    height: 90%;
 }
-.detail-item{
-    padding-bottom: 10px;
-    margin-bottom: 40px;
+.user-info > p{
+    padding-top: 10px;
     font-size: 25px;
 }
-.detail-main{
-    padding: 20px;
-    list-style-type: none;
-    width: 150px;
-    margin: 50px;
-    text-align: center;
-}
-.address-container{
-    width: 400px;
-    height: 100px;
-    border: 2px solid rgb(189, 189, 189);;
-    border-radius: 3%;
-}
-.address-container>.detail-item{
-    display: flex;
-    margin: 0px 10px;
-}
-.address-container>div>.detail-item{
-    margin-bottom: 0px;
-    display: flex;
-}
-.address-container>div>.detail-item>input{
-    margin:10px 10px;
-}
-.number{
-    width: 20%;
-}
-.road{
-    width:80%
-}
-.user-detail-container > a {
-    margin: 0 auto;
-}
-.user-detail-container > a > button{
-
-    width: 70px;
+.user-info > a > button{
+    margin-top: 90px;
+    margin-left: 130px;
+    width: 100px;
     height: 40px;
     color: white;
     background-color: #01b9ff;
@@ -197,12 +155,85 @@ input:focus{
     border: 1px solid #e7e7e7;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    font-size: 15px;
 }
-/* <ul class="detail-side">
-<li class="detail-item">이름</li>
-<li class="detail-item">아이디</li>
-<li class="detail-item">전화번호</li>
-<li class="detail-item">현재상태</li>
-<li class="detail-item">주소</li>
-</ul>
-<div class="detail-main"></div> */
+.emp-info{
+    margin: 20px;
+    padding : 20px 0px 0px 20px;
+    width: 50%;
+    height: 90%;
+    border: 3px solid #01b9ff;
+    border-radius: 5%;
+}
+.emp-info>p{
+    padding-top: 10px;
+    font-size: 25px;
+}
+.management{
+    display: flex;
+    margin: 20px;
+    height: 400px;
+    border: 3px solid #01b9ff;
+    border-radius: 3%;
+    padding: 20px 0px 0px 20px;
+}
+
+.match-info{
+    padding-top: 10px;
+    font-size: 25px;
+}
+.match-info>a>button{
+    margin-top: 30px;
+    width: 110px;
+    height: 35px;
+    color: white;
+    margin-left: 20px;
+    background-color: #01b9ff;
+    border-radius: 10%;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 15px;
+}
+.status-manage{
+    padding-top: 10px;
+    margin-left: 40px;
+}
+#status{
+    font-size: 20px;
+    width: 120px;
+    height: 30px;
+}
+#status:focus{
+    outline: none;
+}
+.status-manage>form>button{
+    width: 90px;
+    height: 35px;
+    color: white;
+    margin-left: 20px;
+    background-color: #01b9ff;
+    border-radius: 10%;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 15px;
+}
+.status-manage>div{
+    height: 100%;
+    display:flex;
+    margin-top: 270px;
+    justify-content: center;
+}
+.status-manage>div>a>button{
+    width: 90px;
+    height: 35px;
+    color: white;
+    margin-left: 20px;
+    background-color: #01b9ff;
+    border-radius: 10%;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 15px;
+}

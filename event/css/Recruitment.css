@@ -1,0 +1,69 @@
+.main{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+.event-container {
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+
+.event-banner {
+    min-width: 1024px;
+    width: 100%;
+    height: 700px;
+    background-color: aqua;
+    margin: 0 auto;
+    border: 5px solid black;   
+    position: relative; /* 위치 지정을 위해 부모 요소에 상대 위치 지정 */
+    text-align: center; /* 텍스트를 가로 중앙 정렬 */
+}
+
+.event-banner img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.event-banner-text {
+    position: absolute; /* 텍스트를 이미지 위에 위치시키기 위해 절대 위치 지정 */
+    top: 50%; /* 상단을 기준으로 세로 중앙으로 이동 */
+    left: 40%; /* 왼쪽을 기준으로 가로 중앙으로 이동 */
+    transform: translate(-50%, -50%); /* 중앙 정렬 */
+    color: white; /* 텍스트 색상 설정 (원하는 색상으로 변경) */
+    font-size: 24px; /* 원하는 글꼴 크기로 변경 */
+    margin: 0; /* 왼쪽 여백을 0으로 설정하여 시작점을 왼쪽 상단으로 맞춤 */
+    /* 추가적인 스타일링을 필요에 따라 적용하세요. */
+    text-align: left;
+    min-width: 1024px;    
+}
+
+.Recruitment-into
+{    
+    float: left;
+    min-width: 1024px;
+    width: 100%;
+    height: 700px;
+    background-color: aqua;
+    margin: 0 auto;
+    border: 5px solid black;   
+    position: relative; /* 위치 지정을 위해 부모 요소에 상대 위치 지정 */
+    text-align: center; /* 텍스트를 가로 중앙 정렬 */
+}
+
+.Recruitment-into-left{
+    width: 400px;
+    height: 300px;
+    background-color: rgb(95, 29, 119);
+    float: left;
+}
+
+.Recruitment-into-right{
+    float: left;
+    width: 700px;
+    height: 600px;
+    background-color: rgb(75, 13, 42);
+}
+
