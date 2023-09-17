@@ -19,6 +19,15 @@
         <hr>
         <!-- 헤더 -->
 
+        <!-- <div class="modal">
+            <div class="modalHeader">
+                <div class=" modalX">X</div>
+            </div>
+            <div class="modalContent">
+
+            </div>
+        </div> -->
+
         <div class="container">
             <!-- 지역 및 등록된 시터 수 -->
             <div class="mainHeader">
@@ -32,18 +41,23 @@
             <!-- 지역 및 등록된 시터 수 -->
 
             <!-- 시터 정보 필터 -->
-            <div class="sitterFilter">
-                <span>
-                    <a href="#">
-                        <img src="../img/filter.png">
-                        필터
-                    </a>
-                </span>
-                <span><a href="#">원하는 활동▼</a></span>
-                <span><a href="#">돌봄 일정▼</a></span>
-                <span><a href="#">아이 유형▼</a></span>
-                <span><a href="#">시터 유형▼</a></span>
+
+
+            <div id="wrap">
+                <a href="#" class="button modal-open">
+                    <img src="../img/filter.png">
+                    필터
+                </a>
+                <a href="javascript:openModal('modal1');" class="button modal-open">원하는 활동▼</a>
+                <a href="javascript:openModal('modal2');" class="button modal-open">돌봄 일정▼</a>
+                <a href="javascript:openModal('modal3');" class="button modal-open">아이 유형▼</a>
+                <a href="#" class="button modal-open">시터 유형▼</a>
             </div>
+
+            <div id="modal"></div>
+
+
+            <div class="sitterFilter">
             <!-- 시터 정보 필터 -->
 
             <!-- 시터 정보 리스트 -->
@@ -332,12 +346,140 @@
 
         <!-- 푸터 -->
         <hr>
-        <div  class="footer">
-            푸터임미당            
+        <div class="footer">
+            푸터임미당
         </div>
         <!-- 푸터 -->
-
     </div>
+
+    <div class="modal-con modal1">
+        <a href="javascript:;" class="close">X</a>
+        <p class="title">원하는 활동</p>
+        <div class="con">
+            <div class="sitterInfoType">
+                <div class="possible"><strong>가능한 일들</strong></div>
+
+                <div class="sitterTre">
+                    <div class="possibleImg">
+                        <img src="../img/k_study.png">
+                        <div class="possibleName">하나</div>
+                    </div>
+
+                    <div class="possibleImg">
+                        <img src="../img/filter.png">
+                        <div class="possibleName">하나</div>
+                    </div>
+
+                    <div class="possibleImg">
+                        <img src="../img/filter.png">
+                        <div class="possibleName">하나</div>
+                    </div>
+
+                    <div class="possibleImg">
+                        <img src="../img/filter.png">
+                        <div class="possibleName">하나</div>
+                    </div>
+
+                    <div class="possibleImg">
+                        <img src="../img/filter.png">
+                        <div class="possibleName">하나</div>
+                    </div>
+
+                    <div class="possibleImg">
+                        <img src="../img/filter.png">
+                        <div class="possibleName">하나</div>
+                    </div>
+
+                    <div class="possibleImg">
+                        <img src="../img/filter.png">
+                        <div class="possibleName">하나</div>
+                    </div>
+
+                    <div class="possibleImg">
+                        <img src="../img/filter.png">
+                        <div class="possibleName">하나</div>
+                    </div>
+
+                    <div class="possibleImg">
+                        <img src="../img/filter.png">
+                        <div class="possibleName">하나</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sitterSel">
+                <button class="sitterTerBtn">활동 선택</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-con modal2">
+        <a href="javascript:;" class="close">X</a>
+        <p class="title">돌봄일정</p>
+        <div class="con">
+            <div class="sitterDate">
+                <div>돌봄 요일</div>
+                <div class="mons">
+                    <div class="mon">월<input type="hidden" value="월"></div>
+                    <div class="mon day">화</div>
+                    <div class="mon">수</div>
+                    <div class="mon">목</div>
+                    <div class="mon">금</div>
+                    <div class="mon">토</div>
+                    <div class="mon">일</div>
+                </div>
+            </div>
+            <div class="sitterDate">
+                <div>돌봄 시간</div>
+                <div class="times">
+                    <div class="sitterTime">오전(07~12)</div>
+                    <div class="sitterTime">오후(12~18)</div>
+                    <div class="sitterTime">저녁(18~22)</div>
+                </div>
+            </div>
+            <div class="sitterSel">
+                <button class="sitterTerBtn">일정 선택</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal"></div>
+    <div class="modal-con modal3">
+        <a href="javascript:;" class="close">X</a>
+        <p class="title">아이유형</p>
+        <div class="con">
+            <div class="">
+                <div>연령대</div>
+                <div class="kid">
+                    <div class="kidAgeImg">
+                        <img src="../img/sImg.png">
+                    </div>
+                    <div class="kidAgeImg">
+                        <img src="../img/sImg.png">
+                    </div>
+                    <div class="kidAgeImg">
+                        <img src="../img/filter.png">
+                    </div>
+                </div>
+                <div class="kid">
+                    <div class="kidAge">영아<br><span>&nbsp; (만3~6세)</span></div>
+                    <div class="kidAge">유아<br><span>&nbsp; (만6~8세)</span></div>
+                    <div class="kidAge">초등학생<br><span>&nbsp; (만8~13세)</span></div>
+                </div>
+            </div>
+            <div class="sitterSel">
+                <button class="sitterTerBtn">신청하기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script src="../js/sitterFind.js"></script>
+
+
 </body>
 
 </html>
