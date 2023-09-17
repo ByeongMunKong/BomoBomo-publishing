@@ -8,13 +8,13 @@
 
 
 main{
-    /* border-top: 1px solid #bbb; */
-    /* background-color: aquamarine; */
+   
     margin-top: 45px;
-    /* background-color: #f3eeee; */
+  
 }
 
-.user-container{
+
+.buy-container{
     width: 1024px;
     height: 100%;
     /* border: 1px solid black;   */
@@ -41,11 +41,11 @@ main{
     margin-bottom: 15px;
 }
 .menu-bar>div:first-child{
-  width: 180px;
-  height: 100px;
-  margin: 0;
-  border: none;
-}
+    width: 180px;
+    height: 100px;
+    margin: 0;
+    border: none;
+  }
 .logo-img>img{
     height: 100px;
     width: 170px;
@@ -87,10 +87,10 @@ main{
 
 .page-view{
     /* border: 1px solid black; */
-    width: 900px;
     /* background-color: blue; */
     /* margin-top: 5px; */
     margin-left: 20px;
+    width: 900px;
 }
 .page-title{
     /* border: 1px solid black; */
@@ -109,111 +109,82 @@ main{
     font-family: 'Gamja Flower', cursive;
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-family: 'Single Day', cursive;
-    color: #0ba891;
-    /* padding: 100px; */
-    /* margin-bottom: 10px; */
+    color: #0ba891;;
+}
+.buybox{
     /* border: 1px solid black; */
+    /* height: 600px; */
+    margin-top: 30px;
+
+}
+.buy-area{
+    /* border: 1px solid black; */
+    margin-top: 30px;
+    height: 80px;
+  
 }
 
-.updateText{
-    margin-top: 40px;
-    /* border: 1px solid black; */
-    height: 550px;
-    border-collapse: collapse ;
-}
-
-.checkPw{
-    /* border: 1px solid black; */
-    width: 300px;
-    margin-top: 5px;
-    margin-left: 210px;
-    text-align: left;
-    font-size: 12px;
-    color: red;
-    font-style: italic;
-}
-.userInfo-area{
-    /* border: 1px solid black; */
-    height: 50px;
-    text-align: center;
-    /* width: 80px; */
+.buy-text{
+    border: 1px solid black;
+    width: 810px;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
     margin-top: 20px;
-    position: relative;
-    /* border-collapse: collapse ; */
-}
-.userInfo{
-    width: 400px;
-    height: 40px;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-.userInfo-area img{
-    position : absolute;
-    width: 20px; 
-    /* width: 50px; */
-    top: 30px;
-    left: 190px;
-    margin: 0;  
    
 }
+.buy-text div{
+    margin-top: 12px;
+}
 
-.addressnum{
-    /* float: left; */
-    margin-left: -170px;
-    margin-top: 20px;
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-}
-.addressnumbtn{
-    width: 70px;
-    height: 40px;
-    background-color: #0ba891;
-    border: 1px solid #0ba891;
-    color: white;
-    cursor: pointer;
-}
-.addressInput{
-    margin-top: 20px;
-    width: 400px;
-    height: 40px;
-    border-radius: 5px;
-
-}
-#PostCodeSearch{
-    height: 40px;
-    background-color: #bbb;
-    border: 1px solid #bbb;
-    color: white;
-    cursor: pointer;
-    
-
-}
-.addressplus{
+.img-area{
     width: 100px;
-    height: 40px;
-    border-radius: 5px;
+    height: 100px;
+    border: 1px solid black;
+}
+.img-area img{
+    width: 100px;
+    height: 100px;
+}
+.buy-text-area{
+    /* border: 1px solid black; */
+    width: 600px;
+    padding-top: 20px;
+    height: 80px;
+    font-size: 18px;
+    
+}
+.buy-text-area p{
+    text-decoration: none;
+    color: black;
+  
+}
+
+.price{
+    /* border: 1px solid black; */
+    line-height: 100px;
+    height: 100px;
+}
+.paging{
+    /* border: 1px solid black; */
+    margin-top: 530px;
 
 }
-    
-.addressdetail{
-    margin-top: 20px;
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
-    
+.page{
+    display: flex;
+    margin: auto;
+    /* border: 1px solid rebeccapurple; */
+    text-align: center;
+    justify-content: center;
+    /* padding: 10px; */
+}
+.page>a{
+    border: 1px solid black;
+    margin: 5px;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    /* background-color: #e6e6e6; */
+    border: 1px solid #0ba891;;
 }
 
-.buttonJoin button{
-    width : 355px;
-    height: 40px;
-    margin-top: 100px;  
-    cursor: pointer;
-    color: white;
-    background-color: #0ba891;
-    border: 0px solid black;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 20px;
-    margin-left: 230px;
-}
