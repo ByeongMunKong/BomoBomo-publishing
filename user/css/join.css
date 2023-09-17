@@ -103,7 +103,10 @@ ul {
  
 }
 
-
+.infoLabel {
+    display: none;
+    color: red;
+}
 
 
 

@@ -107,7 +107,9 @@ ul {
     color: brown;
 }
 
-
+.labelId, .labelPw {
+    display: none;
+}
 
 
 
