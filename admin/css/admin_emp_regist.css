@@ -6,9 +6,8 @@ a{
     text-decoration: none;
     color: inherit;
 }
-input{
+input,textarea{
     padding: 5px;
-    border-radius: 5%;
     font-size: 16px;
     font-weight: bold;
     border: 2px solid rgb(189, 189, 189);
@@ -16,18 +15,21 @@ input{
 input:focus{
     outline: none;
 }
+textarea:focus{
+    outline: none;
+}
 .admin-container{
     display: flex;
     margin :auto ;
     width: 1200px;
-    height:1000px;
+    min-height:1000px;
 
     background-color: #e7e7e7;
 }
 
 .side-container{
     width: 200px;
-    height: 100%;
+    min-height: 1000px;
     background-color: #353535;
 }
 
@@ -65,7 +67,7 @@ input:focus{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    min-height: 1100px;
 }
 .main-header{
     align-items: center;
@@ -117,7 +119,7 @@ input:focus{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.user-detail-container{
+.emp-detail-container{
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -129,66 +131,68 @@ input:focus{
     border-radius: 3%;
 }
 
-.detail-title{
+.emp-info-container1{
+    margin: 10px;
+    display: flex;
+    height: 300px;
+    width: 98%;
+}
+.emp-info-container1>.img{
+    margin: 5px;
+    border-radius: 5%;
+    border: 2px solid #01b9ff;
+    width: 320px;
+    height: 290px;
+}
+#image-preview{
+    width: 320px;
+    height: 290px;
+    border-radius: 5%;
+}
+.info{
+    border: 2px solid #01b9ff;
+    border-radius: 5%;
+    margin: 5px;
+    padding: 10px;
+    width: 600px;
+}
+.emp-info-container2{
+    margin: 40px 10px 10px 10px;
+    border: 2px solid #01b9ff; 
+    border-radius: 1%;
+    height: 500px;
+    width: 98%;
+}
+.introduction{
+    height: 260px;
+}
+.introduction>.title{
+    padding: 3px;
+    font-size: 20px;
     font-weight: bold;
-    font-size: 30px;
-    margin-top:20px;
-    text-align: center;
 }
-.detail-info{
-    display: flex;
-    width: 95%;
-    height: 80%;
-    margin: 0 auto;
+.activity{
+    margin-top: 5px;
+    height: 48%;
 }
-.detail-side{
-    padding: 20px;
-    list-style-type: none;
-    width: 150px;
-    margin: 50px;
-    border-right: 3px solid #01b9ff;
-    text-align: center;
+.activity>.title{
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bold;
 }
-.detail-item{
-    padding-bottom: 10px;
-    margin-bottom: 40px;
-    font-size: 25px;
+#selfint{
+    resize: none;
+    margin: 5px;
+    width: 860px;
+    height: 200px;
+    font-size: 20px;
+    font-weight: 100!important;
+    padding: 5px;
 }
-.detail-main{
-    padding: 20px;
-    list-style-type: none;
-    width: 150px;
-    margin: 50px;
-    text-align: center;
+.submit-button{
+    margin: 10px auto;
 }
-.address-container{
-    width: 400px;
-    height: 100px;
-    border: 2px solid rgb(189, 189, 189);;
-    border-radius: 3%;
-}
-.address-container>.detail-item{
-    display: flex;
-    margin: 0px 10px;
-}
-.address-container>div>.detail-item{
-    margin-bottom: 0px;
-    display: flex;
-}
-.address-container>div>.detail-item>input{
-    margin:10px 10px;
-}
-.number{
-    width: 20%;
-}
-.road{
-    width:80%
-}
-.user-detail-container > a {
-    margin: 0 auto;
-}
-.user-detail-container > a > button{
-
+.submit-button>button{
     width: 70px;
     height: 40px;
     color: white;
@@ -198,11 +202,3 @@ input:focus{
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
-/* <ul class="detail-side">
-<li class="detail-item">이름</li>
-<li class="detail-item">아이디</li>
-<li class="detail-item">전화번호</li>
-<li class="detail-item">현재상태</li>
-<li class="detail-item">주소</li>
-</ul>
-<div class="detail-main"></div> */
