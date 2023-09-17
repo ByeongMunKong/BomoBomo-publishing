@@ -104,4 +104,190 @@ a{
     color: white;
     background-color: rgb(172, 185, 202);
     margin-left: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-main-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 80%;
+    margin: 30px auto 0px;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px gray;
+    border-radius: 3%;
+}
+.top{
+    width: 100%;
+    /* margin: 0 auto; */
+    /* padding-top: 10px 10px; */
+    padding: 10px;
+    display: flex;
+    font-size: 20px;
+    width: 96%;
+    margin: 0 auto;
+    border-bottom: 3px solid #01b9ff;
+    margin-right:auto;
+    text-align: center;
+}
+.top>div{
+    font-weight: bold;
+    font-size: 21px;
+    color: #353535;
+}
+.top .emp-num{
+    width: 100px;
+}
+.top .emp-name{
+    text-align: center;
+    width: 120px;
+}
+.top .date{
+    margin-left: 60px;
+}
+.top .emp-phone{
+    margin-left: 100px;
+}
+.top .emp-email{
+    margin-left: 170px;
+}
+
+.emp-list{
+    height: 100%;
+}
+.emp-list > div {
+    display: flex;
+    margin: 0 auto;
+    width: 98%;
+    border-bottom:1px solid #ddd;
+}
+
+.post{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 67px;
+    font-size: 18px;
+}
+
+.post>div{
+    cursor: pointer;
+}
+.post .emp-num{
+    width: 12%;
+}
+.post .emp-name{
+    width: 15%;
+
+}
+.post .date{
+    width: 19%;
+}
+.post .emp-phone{
+    width: 20%;
+}
+.post .emp-email{
+    width: 30%;
+}
+
+.emp-list-bottom{
+    margin-top: 10px;
+    display: flex;
+}
+
+.emp-search-container > form{
+    height: 90px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+form > select{
+    margin-top: 10px;
+    margin-right: 3px;
+    height: 30px;
+}
+
+form > input{
+    margin-top: 10px;
+    height: 28px;
+}
+
+form > button{
+    cursor: pointer;
+    border: 1px solid black;
+    width: 45px;
+    height: 30px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+.pagination-container {
+    display: flex;
+    text-align: center;
+    align-content: center;
+    font-size: 18px;
+    margin-top: 35px;
+    margin-right: 5px;
+    width: 40%;
+}
+
+.pagination-container a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    border-left: 0;
+    line-height: 100%;
+    font-size: 15px;
+}
+
+.bt{
+    background-color:white;
+}
+
+.pagination-container a.bt {
+    padding-top: 9px;
+}
+
+.pagination-container a.num {
+    padding-top: 9px;
+    font-size: 15px;
+}
+
+
+.pagination-container a:first-child {
+    border-left: 1px solid #ddd;
+}
+
+.emp-search-container{
+    margin: auto 33px auto 30px;
+    width: 35%;
+}
+.emp-search-container > form>button{
+    border: 1px solid rgb(118,118, 118);
+    border-radius: 5%;
+}
+
+.on{
+    background-color:#01b9ff !important;
+    color: white;
+}
+
+a > button{
+    width: 70px;
+    height: 40px;
+    color:white;
+    background-color: #01b9ff;
+    border-radius: 10%;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 80px;
 }
