@@ -99,6 +99,7 @@ textarea:focus{
 .contents-title > span{
     color: #646464;
     font-size: 30px;
+    padding-bottom: 10px;
 }
 .admin-name{
     margin-left: auto;
