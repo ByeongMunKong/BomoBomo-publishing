@@ -1,3 +1,4 @@
+
 a {
     text-decoration: none;
 }
@@ -5,58 +6,116 @@ a {
 li {
     list-style-type: none;
 }
-
-ul {
-    position: absolute;
-    margin-left: -10px;
-    display: flex;
-    justify-content: center;
-
-}
+    
 
 .main{
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
-}
 
-.header, .footer {
-    background-color: #fff;
-    padding: 20px 0;
+    width: 100%;    
+    height: 100%;
+    min-height: 100vm;
 }
 
 .joinContainer {
-    width: 1024px;
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-}
-
-.joinArea {
-    width: 350px;
-    height: 700px;
-    margin: 0 auto;
-    border: 0px solid black;
+    height: 850px;
 }
 
 .joinGreeting {
-    /* padding-top: 50px; */
+    padding-top: 50px;
     font-size: 25px;
-    color: #0ba891;
-    font-weight: 500;
-    /* margin-bottom: 10px; */
+    color: #FF7000;
+    margin-bottom: 50px;
     text-align: center;
 }
 
-.joinGreeting h6 {
-    margin-top: -20px;
-    height: 10px;
+.inputGroup{
+    display: table;
 }
 
+.userInfoText {
+    position: relative;
+  }
 
-.inputText input{
-    width : 330px;
-    height: 30px;
+.userInfoText img:not(.detailImg)  {
+    position : absolute;
+    width: 20px; 
+    top: 15px;
+    left: 12px;
+    margin: 0; 
+}
+
+.userInfo {
     margin-bottom: 10px;
+    width: 330px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #FF7000;
+    /* border: 1px solid #bbb; */
+    text-indent: 25px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.infoLabel {
+    display: none;
+    color: red;
+}
+
+.postalCode {
+    margin-bottom: 10px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #FF7000;
+    text-indent: 25px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.addrBtn {
+    margin-left: 20px;
+    width: 100px;
+    height: 50px;
+    border: 2px solid orange;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #FF7000;
+}
+
+.referAddr {
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #FF7000;
+    /* border: 1px solid #bbb; */
+    text-indent: 25px;
+    padding: 10px 12px;
+    font-size: 14px;    
+}
+
+.detailAddr {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    width: 190px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #FF7000;
+    /* border: 1px solid #bbb; */
+    text-indent: 25px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.detailImg {
+    position : absolute;
+    width: 20px; 
+    top: 15px;
+    left: 150px;
+    margin: 0; 
 }
 
 .buttonJoin button{
@@ -65,48 +124,56 @@ ul {
     margin-top: 30px;  
     cursor: pointer;
     color: white;
-    background-color: #0ba891;
+    background-color: #FF7000;
     border: 0px solid black;
     border-radius: 5px;
     font-weight: 500;
     font-size: 20px;
 }
 
-.inputGroup{
-    width: 350px;
-    height: 100px;   
-    display: table;
-    border-collapse: collapse;  
+
+
+
+
+
+
+.detailAddrs {
+    display: flex;
 }
 
-.userInfo {
-    width: 350px;
-    border-radius: 5px;
-    border: 1px solid #bbb;
-    text-indent: 25px;
-    padding: 10px 12px;
-    font-size: 14px;
-}
 
-.userInfoText {
-    position: relative;
-    width: 300px;
-  }
 
-.userInfoText img {
-    position : absolute;
-    width: 20px; 
-    /* width: 50px; */
-    top: 15px;
-    left: 12px;
-    margin: 0;
- 
-}
 
-.infoLabel {
-    display: none;
-    color: red;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
