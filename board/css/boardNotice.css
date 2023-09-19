@@ -13,35 +13,50 @@
 
 /* 공지사항 영역 타이틀 */
 .Notice-container h3{
-  border-bottom: 1px solid gray;
+    width: 524px;
   padding: 15px 15px 15px 0;
 }
 
 
-
-/* 공지사항 테이블 */
-/* .board-table th{
-
+/* 공지사항 검색 */
+.notice-title-search {
+    display: flex;
     border-bottom: 1px solid gray;
-    
+
 }
 
-.board-number, .board-count {
+.Notice-search {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 500px;
+}
+
+.Notice-search form {
+    display: flex;
+    align-items: center
+}
+
+.notice-select-search{
+    height: 25px;
+    width: 70px;
+}
+
+.notice-search-bar {
+    margin-left: 5px;
+    height: 21px;
+}
+
+.notice-search-btn {
+    margin-left: 5px;
     width: 50px;
-    height: 50px;
+    height: 25px;
 }
 
-.board-title {
-    width: 724px;
-}
 
-.board-user-id {
-    width: 120px;
-}
 
-.board-date {
-    width: 130px;
-} */
+
 
 
 /* 공지사항 테이블 */
