@@ -87,8 +87,10 @@
 }
 
 .service-content-container{
+    border: 2px solid rgb(255, 255, 255);
     /* border: 2px solid red; */
     width: 1024px;
+    height: 400px;
     margin: 0px auto;
     padding: 90px 0 90px 0;
     font-family: 'Black Han Sans', sans-serif;
@@ -97,8 +99,18 @@
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-family: 'Single Day', cursive;
     font-size: 30px;
+    position: relative;
+    overflow: hidden;
     
   }
+
+.ddddd{
+    margin: 0 auto;
+    height: 600px;
+    width: 1024px;
+    position: relative;
+}
+
   .service-content-container h2 {
     /* border: 2px solid blue; */
     text-align: center;
@@ -110,6 +122,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    width: 1050px;
   
   }
   .service-content-container ul li {
@@ -123,3 +137,42 @@
     border-radius: 10px;
   
   }
+
+  .goods-section-button, .recently-section-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    box-shadow: 2px 1px 1px gray;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0.6;
+}
+
+
+
+.recently-section-button  {
+    top: 390px;
+
+}
+.goods-section-button span, .recently-section-button span {
+    color: gray;
+}
+
+
+
+.recently-left-button {
+    text-indent: 6px;
+    left: -20px
+}
+
+
+.goods-right-button, .recently-right-button {
+    right: 0px;
+}
+
+  
