@@ -33,28 +33,28 @@ main{
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
-    border: 1px solid #bbb;
+    /* border: 1px solid #bbb; */
     /* background-color: red; */
     height: 900px;
     width: 180px;
     margin-left: 10px;
     margin-bottom: 15px;
 }
-.menu-bar>div:first-child{
+/* .menu-bar>div:first-child{
     width: 180px;
     height: 100px;
     margin: 0;
     border: none;
-  }
-  .logo-img>img{
+  } */
+  /* .logo-img>img{
     height: 100px;
     width: 170px;
-}
+} */
 .menu-bar>div{
     /* background-color: rgb(255, 255, 255); */
     /* background-color: black; */
     margin: 30px auto;
-    border: 1px solid #bbb;
+    /* border: 1px solid #bbb; */
     text-align: center;
     /* border-radius: 10%; */
     width: 150px;
@@ -66,7 +66,7 @@ main{
 
 .menu-bar>div>a:hover{
    color: white; 
-   background-color: #0ba891;
+   background-color: #FF7000;
  }
 
 .menu-bar>div>a{
@@ -75,12 +75,10 @@ main{
     text-decoration: none;
     line-height: 40px;
     color: black;
-    font-family: 'Black Han Sans', sans-serif;
-    font-family: 'Dongle', sans-serif !important;
-    font-family: 'Gamja Flower', cursive;
+   
     font-family: 'IBM Plex Sans KR', sans-serif;
-    font-family: 'Single Day', cursive;
-    font-size: 45px;
+    
+    font-size: 25px;
     width: 150px;
     /* border-radius: 10%; */
 }
@@ -102,13 +100,18 @@ main{
     height: 80px;
     /* border: 1px solid black; */
     line-height: 100px;
-    font-size: 90px;
+    font-size: 80px;
     font-family: 'Black Han Sans', sans-serif;
     font-family: 'Dongle', sans-serif !important;
     font-family: 'Gamja Flower', cursive;
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-family: 'Single Day', cursive;
-    color: #0ba891;;
+    color: #FF7000;
+}
+
+.page-title>p>a{
+    text-decoration: none;
+     color: #FF7000;
 }
 .review-container{
     /* border: 1px solid black; */
@@ -129,6 +132,21 @@ label {
     display: block;
     margin-bottom: 5px;
 }
+
+.title p{
+ border: 1px solid #ccc;
+ display: inline-block;
+ margin-left: 5px;
+ padding-bottom: 5PX;
+ height: 18px;
+ line-height: px;
+ border-radius: 5px;
+}
+.title span{
+ /* border: 1px solid black; */
+ font-size: 13px;
+
+ } 
 
 input[type='text'],
 textarea {
@@ -154,7 +172,7 @@ input[type='file'] {
 .submit-btn {
     width: 400px;
     padding: 10px;
-    background-color: #00c7ae;
+    background-color: #FF7000;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -166,7 +184,7 @@ input[type='file'] {
 }
 
 .submit-btn:hover {
-    background-color: #00a792;
+    background-color: #FF7000;
 }
 
 .form-wrap {
@@ -210,7 +228,7 @@ input[type='file'] {
 
 .x-box::after {
     content: 'x';
-    background-color: #00c7ae;
+    background-color: #FF7000;
     color: white;
     display: block;
     position: absolute;
@@ -221,4 +239,49 @@ input[type='file'] {
     right: -5px;
     text-align: center;
     line-height: 13px;
+}
+
+.grade-group{
+    /* border: 1px solid black; */
+    /* position: absolute; */
+    /* top : 350px */
+    display: flex;
+}
+
+.grade{
+    display: flex;
+    direction: rtl;
+    border:0;
+    /* border: 1px solid black; */
+    /* flex-di rection: column; */
+    /* text-align: right;     */
+}
+.text-bold{
+    margin-left: 0px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    font-size: 15px;
+    line-height: 30px;
+    height: 15px;
+    margin-right: 5px;
+}
+.grade legend{
+    text-align: right;
+}
+.grade input[type=radio]{
+    display: none;
+}
+.grade label{
+    font-size: 20px;
+    color: transparent;
+    text-shadow: 0 0 0 #f0f0f0;
+}
+.grade label:hover{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+.grade label:hover ~ label{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+.grade input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마이페이지</title>
     <link rel="stylesheet" href="../css/mypage_main.css">
-    <link rel=stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="/common/css/common.css"/>
     <link rel="stylesheet" href="/common/css/footer.css"/>
@@ -14,6 +14,7 @@
     <script src="/common/js/index.js" defer></script>
     <script src="/common/js/common.js" defer></script>
     <script src="../js/mypage_main.js" defer></script>
+    <script type="text/javascript" src="https://service.iamport.kr/js/iamport.payment-1.1.5.js"></script>
 
 </head>
 <body>
@@ -28,9 +29,9 @@
                     <div class="section">
                         <aside class="menu-bar">
                             
-                                <a href="/Mypage/html/mypage_main.html" class="logo-img">
+                                <!-- <a href="/Mypage/html/mypage_main.html" class="logo-img">
                                     <img src="/Mypage/img/logo.png">
-                                </a>
+                                </a> -->
                             
                             <div class="announcement">
                                 <!--클릭시  페이지 이동-->
@@ -76,7 +77,7 @@
                                         <!--데이터에서 이미지 받기-->
                                         <img src="../img/bobo.jpeg">
                                     </div>
-                                <div class="siter-info">
+                                    <div class="siter-info">
                                         <div class="siter-detail-info">
                                             <ul class="siter-private-info">
                                                 <li>김보노</li>
@@ -100,9 +101,100 @@
                                         <!--데이터 값의 조건을 걸어서 보여지는 창을 바꿔야함
                                         추가로 창 을 2개더 만들어서 조건으로 창을 바꿔야함-->
                                         <div class="siter-situation">
-                                            <span>면접대기중</span>
+                                          
+                                                <span>면접대기중</span>    
+                                            
+                                            <!--모달창으로 만들어서 띄우기 -->
                                         </div>
-                                </div>
+                                        <!---->
+                                        <div class="modal-pay">
+                                            <h1 class="pay-name">결제하기</h1>    
+                                            <div class="payment-wrap">
+                                            
+                                            <div class="payment-wrap-left">
+                                                <div class="user-info-area">
+                                                    <p class="user-info">주문자 정보</p>
+                                                    <ul class="user-detail">
+                                                        <li class="user">
+                                                            <p>주문자</p>
+                                                            <p class="user-private-area">
+                                                                <span class="user-name">김성찬</span>
+                                                                <span class="user-phone">01012341234</span>
+                                                            </p>
+                                                            
+                                                            <p class="user-email">wwww@naver.com</p>
+                                                        </li>
+                                                        <li class="user-address">
+                                                            <p>배송자 정보</p>
+                                                            <p class="address">주소</p>
+                                                            <p class="address-info">서울시 노원구 노원대로 1111</p>
+                                                            <p class="address-detail">뉴서울 아파트 111동 1111호</p>
+                                                        </li>
+                                                    </ul>    
+                                                </div>
+                                            </div>   
+                                            <div class="payment-wrap-right">
+                                                <div class="product-area">
+                                                    <ul class="product-info">
+                                                        <li class="product-detail">
+                                                            <p class="product-title">
+                                                                <span>[보모보모]</span>
+                                                                <span>알들살뜰 돌보기</span>                        
+                                                            </p>    
+                                                            <p class="usetime">
+                                                                <span>이용시간 :</span>
+                                                                <span>0000~0000</span>
+                                                            </p>
+                                                            <p class="pay"> 
+                                                                <span>결제 금액</span>
+                                                                <span>1,000,000원</span>
+                                                            </p>
+                                                        </li>
+                                                        <li class="product-detail">
+                                                            <p class="product-title">
+                                                                <span>[보모보모]</span>
+                                                                <span>알들살뜰 돌보기</span>                        
+                                                            </p>    
+                                                            <p class="usetime">
+                                                                <span>이용시간 :</span>
+                                                                <span>0000~0000</span>
+                                                            </p>
+                                                            <p class="pay"> 
+                                                                <span>결제 금액</span>
+                                                                <span>1,000,000원</span>
+                                                            </p>
+                                                        </li>
+                                                        <li class="product-detail">
+                                                            <p class="product-title">
+                                                                <span>[보모보모]</span>
+                                                                <span>알들살뜰 돌보기</span>                        
+                                                            </p>    
+                                                            <p class="usetime">
+                                                                <span>이용시간 :</span>
+                                                                <span>0000~0000</span>
+                                                            </p>
+                                                            <p class="pay"> 
+                                                                <span>결제 금액</span>
+                                                                <span>1,000,000원</span>
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="total-area">
+                                                    <p class="total-payment">
+                                                        <span>최종 결제 금액 : </span>
+                                                        <span>00000000원</span>
+                                                    </p>
+                                                </div>
+                                                <div class="check-area">
+                                                    <button class="btn" id="check_module">결제하기</button>
+                                                </div>
+
+                                            </div> 
+                                            </div>
+                                        </div>        
+                                        <!---->
+                                    </div>
                                 </div>    
                             </div>
                             <div class="review-area">

@@ -13,7 +13,7 @@
     <script src="/common/js/index.js" defer></script>
     <script src="/common/js/common.js" defer></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="../js/aplication_page.js"></script>
+    <script src="/Mypage/js/aplication_page.js"></script>
 </head>
 <body>
     <div class="header">
@@ -24,9 +24,9 @@
             <div class="section">
                 <aside class="menu-bar">
                     
-                        <a href="/Mypage/html/mypage_main.html" class="logo-img">
+                        <!-- <a href="/Mypage/html/mypage_main.html" class="logo-img">
                             <img src="/Mypage/img/logo.png">
-                        </a>
+                        </a> -->
                     
                     <div class="announcement">
                         <!--클릭시  페이지 이동-->
@@ -36,15 +36,20 @@
                         <a href="#">FAQ</a> 
                     </div>
                     <div class="pay">
-                        <a href="#">결제내역</a>
+                        <a href="/Mypage/html/buy_page.html">결제내역</a>
                     </div>
                     <div class="account-mg">
-                        <a href="#">계정관리</a>
+                        <a href="/Mypage/html/user_management.html">계정관리</a>
                     </div>
                 </aside>
                 <div class="page-view">
                     <div class="page-title">
-                        <p>내용장석</p>
+
+
+                        <p>
+                            <a href="/Mypage/html/mypage_main.html">신청관리</a>
+                        </p>
+
                     </div>
                 
                     <div class="application-page">
@@ -69,21 +74,21 @@
                                     <!-- <input type="checkbox" class="firstbtn" value="남자">남자</button>
                                     <input type="checkbox" class="firstbtn-ck" value="여자">여자</button> -->
                                 </div>
-                                <div class="gender-check">
-                                    <div class="check-box">
+                                <div class="gender-wrap">
+                                    
                                         <!-- <input class="input-m" type="checkbox" value="남자"> -->
-                                        <label for="input-m" class="label">
+                                        <label for="gender-m" class="gender-box">
                                             <span>남자</span>
-                                            <input class="input-m" type="checkbox" name="gender" value="남자">
+                                            <input id="gender-m" type="radio" name="gender" value="M"/>
                                         </label>
-                                    </div>
-                                    <div class="check-box">
+                                 
+                                
                                         <!-- <input class="input-w" type="checkbox" value="여자" > -->
-                                        <label for="input-w" class="label1">
+                                        <label for="gender-w" class="gender-box">
                                             <span>여자</span>
-                                            <input class="input-w" type="checkbox" name="gender" value="여자" >
+                                            <input id="gender-w" type="radio" name="gender" value="F"/>
                                         </label>
-                                    </div>
+                                    
                                 </div> 
                             </div>
                             <div class="text-area-1">     
@@ -92,32 +97,35 @@
                                     <!-- <input type="checkbox" class="firstbtn" value="남자">남자</button>
                                     <input type="checkbox" class="firstbtn-ck" value="여자">여자</button> -->
                                 </div>
-                                <div class="gender-check-2">
-                                    <div class="check-box-two">
-                                        <input class="input-m-check" type="checkbox" value="남자">
-                                        <label for="input-m-check" class="label-area">
-                                            <span>남자</span>
-                                        </label>
-                                    </div>
-                                    <div class="check-box-two">
-                                        <input class="input-w-check" type="checkbox" value="여자">
-                                        <label for="input-w-check" class="label-area-two">
-                                            <span>여자</span>
-                                        </label>
-                                    </div>
-                                </div>
+                                <div class="gender-wrap-second">
+                                    
+                                    <!-- <input class="input-m" type="checkbox" value="남자"> -->
+                                    <label for="gender-men" class="gender-box-second">
+                                        <span>남자</span>
+                                        <input id="gender-men" type="radio" name="gender-second" value="M"/>
+                                    </label>
+                             
+                            
+                                    <!-- <input class="input-w" type="checkbox" value="여자" > -->
+                                    <label for="gender-women" class="gender-box-second">
+                                        <span>여자</span>
+                                        <input id="gender-women" type="radio" name="gender-second" value="F"/>
+                                    </label>
+                                
+                                </div> 
                             </div>      
                             <!--아이상세 정보 작성-->
                             <div class="chilren-detil">
                                 <p>아이 성격</p>
-                                <input class="chilren-text" type="text" name="text" placeholder="예시) 보노보노보다 뽀로로를 더 좋아해요."/>
+                                <textarea class="children-text"  name="text" placeholder="예시) 보노보노보다 뽀로로를 더 좋아해요.">
+                                </textarea>    
                             </div>
                             <!--문단-->
-                            <div class="read-text">
+                            <!-- <div class="read-text">
                                 <p>아래 희망하는 돌봄활동에 요청사항을 선택해 주세요</p>
-                            </div>
+                            </div> -->
                             <!--선택 사항 작성-->
-                            <div class="chiocecheck-area">
+                            <!-- <div class="chiocecheck-area">
                                 <div class="kor-area">
                                     <div class="ko">
                                         <div>
@@ -172,7 +180,7 @@
                                         </select>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="inputbtn">
                                 <button type="submit" class="btn">저장하기</button>
                             </div>
