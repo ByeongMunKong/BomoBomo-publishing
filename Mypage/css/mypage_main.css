@@ -33,28 +33,28 @@ main{
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
-    border: 1px solid #bbb;
+    /* border: 1px solid #bbb; */
     /* background-color: red; */
     height: 900px;
     width: 180px;
     margin-left: 10px;
     margin-bottom: 15px;
 }
-.menu-bar>div:first-child{
+/* .menu-bar>div:first-child{
     width: 180px;
     height: 100px;
     margin: 0;
     border: none;
-  }
-  .logo-img>img{
+  } */
+  /* .logo-img>img{
     height: 100px;
     width: 170px;
-}
+} */
 .menu-bar>div{
     /* background-color: rgb(255, 255, 255); */
     /* background-color: black; */
     margin: 30px auto;
-    border: 1px solid #bbb;
+    /* border: 1px solid #bbb; */
     text-align: center;
     /* border-radius: 10%; */
     width: 150px;
@@ -66,7 +66,7 @@ main{
 
 .menu-bar>div>a:hover{
    color: white; 
-   background-color: #0ba891;
+   background-color: #FF7000;
  }
 
 .menu-bar>div>a{
@@ -75,12 +75,8 @@ main{
     text-decoration: none;
     line-height: 40px;
     color: black;
-    font-family: 'Black Han Sans', sans-serif;
-    font-family: 'Dongle', sans-serif !important;
-    font-family: 'Gamja Flower', cursive;
     font-family: 'IBM Plex Sans KR', sans-serif;
-    font-family: 'Single Day', cursive;
-    font-size: 45px;
+    font-size: 25px;
     width: 150px;
     /* border-radius: 10%; */
 }
@@ -101,13 +97,13 @@ main{
     height: 80px;
     /* border: 1px solid black; */
     line-height: 100px;
-    font-size: 90px;
+    font-size: 80px;
     font-family: 'Black Han Sans', sans-serif;
     font-family: 'Dongle', sans-serif !important;
     font-family: 'Gamja Flower', cursive;
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-family: 'Single Day', cursive;
-    color: #0ba891;;
+    color: #FF7000;
 }
 .user-area{
     /* border: 1px solid rebeccapurple; */
@@ -183,6 +179,7 @@ main{
 .siterinfo-area{
     /* border: 1px solid black; */
     height: 250px;
+    position: relative;
 }
 .siterinfo-area-container{
     border: 1px solid black;
@@ -256,7 +253,7 @@ main{
 
 }
 .siter-situation>span{
-    border: 1px solid #0ba891;
+    border: 1px solid #FF7000;
     display: inline-block;
     width: 150px;
     text-align: center;
@@ -266,8 +263,9 @@ main{
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-family: 'Single Day', cursive;
     font-size: 40px;
-    color: white;
-    background-color:#0ba891;
+    color: #FF7000;
+    background-color:white;
+    cursor: pointer;
 }
 
 
@@ -308,12 +306,17 @@ main{
     
    
 }
-.top>td{
-    background-color:#0ba891;
+
+.top{
+    border-bottom: 1px solid black;
+    /* border: 1px solid black; */
     
 }
+
+
+
 .review-text>td{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-collapse: collapse;
     font-size: 20px;
     text-align: center;
@@ -323,11 +326,11 @@ main{
 }
 .review-num{
     width: 100px;
-    border: none;
+    /* border: none; */
 }
 .review-title{
     width: 500px;
-    border: none;
+    /* border: none; */
     
 }
 .review-title>a{
@@ -335,7 +338,7 @@ main{
 }
 .review-data{
     width: 100px;
-    border: none;
+    /* border: none; */
 }
 
 .paging{
@@ -358,7 +361,7 @@ main{
     text-align: center;
     font-weight: bold;
     /* background-color: #e6e6e6; */
-    border: 1px solid #0ba891;
+    border: 1px solid #bbb;
 }
 
 /*css 비슷한 지점*/
@@ -379,9 +382,7 @@ main{
     
    
 }
-.top1{
-    background-color: #0ba891;
-}
+
 .review-text1>td{
     border: 1px solid black;
     border-collapse: collapse;
@@ -429,5 +430,226 @@ main{
     text-align: center;
     font-weight: bold;
     /* background-color: #e6e6e6; */
-    border: 1px solid #0ba891;
+    border: 1px solid #bbb;
+}
+
+/*모달 css*/
+.modal-pay{
+    display: none;
+    position: absolute;
+    top: -200px;
+    left: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+.pay-name{
+    /* border-bottom: 1px solid black; */
+    padding-left: 10px;
+    padding-bottom: 5px;
+    /* background-color: #FF7000; */
+}
+.payment-wrap{
+    
+    margin-top: 5px;
+    /* border: 1px solid black; */
+    display: flex;
+    width: 700px;
+   
+}
+
+.payment-wrap-left{
+    margin-left: 10px;
+    /* border: 1px solid black; */
+    padding: 10px 10px;
+}
+
+.user-detail{
+    text-decoration: none;
+    /* border: 1px solid black; */
+    list-style: none;
+    
+}
+
+
+.user-info{
+    /* border: 1px solid black; */
+    height: 30px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666;
+    font-weight: bold;
+}
+
+.user{
+    /* border: 1px solid black; */
+    height: 150px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    padding: 10px;
+    /* background-color: #e6e6e6; */
+    margin-top: 8px;
+
+}
+
+.user p:first-child{
+    /* border: 1px solid black; */
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.user-private-area{
+    /* border: 1px solid black; */
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+  
+
+}
+.user-private-area span{
+    width: 120px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 5px;
+
+}
+
+.user-name{
+    border: 1px solid #666;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    
+}
+
+.user-phone{
+    border: 1px solid #666;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 5px;
+
+}
+
+
+.user-email{
+    border-radius: 5px;
+    border: 1px solid #666; 
+    font-size: 18px;
+    margin-top: 10px;
+    height: 30px;
+    line-height: 30px;
+
+
+}
+
+.user-address{
+    /* border: 1px solid black; */
+}
+
+.user-address p:first-child{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.address{
+    /* border: 1px solid black; */
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.address-info{
+    border: 1px solid #666;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 8px;
+}
+
+.address-detail{
+    border: 1px solid #666;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+
+}
+
+.payment-wrap-right{
+    border-left: 1px solid black;
+    padding: 10px 10px;
+    margin-left: 10px;
+    width: 500px;
+}
+
+.product-info{
+    list-style: none;
+}
+
+.product-info li{
+    /* border-left: 1px solid black; */
+    margin-bottom: 8px;
+}
+
+.product-detail{
+
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+}
+
+.product-detail p{
+    margin-top: 5px;
+
+}
+
+.product-title{
+    font-weight: bold;
+
+}
+
+.pay{
+    /* border: 1px solid black; */
+    /* width: 170px; */
+    /* float: right; */
+    text-align: right;
+}
+
+.pay span:first-child{
+    font-weight: bold;
+}
+
+.total-payment{
+    /* border: 1px solid black; */
+    /* margin-top: 20px; */
+    text-align: right;
+    height: 40px;
+}
+
+.total-payment span{
+    line-height: 50px;
+    font-size: 20px;
+
+}
+
+
+.total-area{
+    /* border: 1px solid black; */
+    height: 40px;
+}
+
+.check-area{
+
+    /* border: 1px solid black; */
+    text-align: right;
+    margin-top: 15px;
+}
+.check-area button{
+    height: 40px;
+    width: 200px;
+    font-size: 25px;
+    background-color: white;
+    color: #FF7000;
+    border: 1px solid #FF7000;
 }

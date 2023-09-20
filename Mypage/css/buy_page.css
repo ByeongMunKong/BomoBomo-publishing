@@ -30,31 +30,17 @@ main{
     /* background-color: #e6e6e6; */
 }
 .menu-bar{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    border: 1px solid #bbb;
-    /* background-color: red; */
     height: 900px;
     width: 180px;
     margin-left: 10px;
     margin-bottom: 15px;
 }
-.menu-bar>div:first-child{
-    width: 180px;
-    height: 100px;
-    margin: 0;
-    border: none;
-  }
-.logo-img>img{
-    height: 100px;
-    width: 170px;
-}
+
 .menu-bar>div{
     /* background-color: rgb(255, 255, 255); */
     /* background-color: black; */
     margin: 30px auto;
-    border: 1px solid #bbb;
+    /* border: 1px solid #bbb; */
     text-align: center;
     /* border-radius: 10%; */
     width: 150px;
@@ -66,7 +52,7 @@ main{
 
 .menu-bar>div>a:hover{
    color: white; 
-   background-color: #0ba891;
+   background-color: #FF7000;
  }
 
 .menu-bar>div>a{
@@ -75,12 +61,8 @@ main{
     text-decoration: none;
     line-height: 40px;
     color: black;
-    font-family: 'Black Han Sans', sans-serif;
-    font-family: 'Dongle', sans-serif !important;
-    font-family: 'Gamja Flower', cursive;
     font-family: 'IBM Plex Sans KR', sans-serif;
-    font-family: 'Single Day', cursive;
-    font-size: 45px;
+    font-size: 25px;
     width: 150px;
     /* border-radius: 10%; */
 }
@@ -103,23 +85,58 @@ main{
     height: 80px;
     /* border: 1px solid black; */
     line-height: 100px;
-    font-size: 90px;
+    font-size: 80px;
     font-family: 'Black Han Sans', sans-serif;
     font-family: 'Dongle', sans-serif !important;
     font-family: 'Gamja Flower', cursive;
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-family: 'Single Day', cursive;
-    color: #0ba891;;
+    color: #FF7000;
 }
-.buybox{
-    /* border: 1px solid black; */
-    /* height: 600px; */
-    margin-top: 30px;
+.page-title>p>a{
+    text-decoration: none;
+     color: #FF7000;
+}
 
+.review-page-area{
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 15PX;
+    height: 50px;
+    line-height: 40px;
+}
+.sitter-area{
+    width: 120px;
+    border: 1px solid #bbb;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.event-area{
+    width: 140px;
+    border: 1px solid #bbb; 
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Dongle', sans-serif !important;
+    font-family: 'Gamja Flower', cursive;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-family: 'Single Day', cursive;
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.buybox{
+    /* display: none; */
 }
 .buy-area{
     /* border: 1px solid black; */
-    margin-top: 30px;
+    /* margin-top: 0px; */
     height: 80px;
   
 }
@@ -130,7 +147,7 @@ main{
     height: 130px;
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 10px;
    
 }
 .buy-text div{
@@ -162,9 +179,24 @@ main{
 
 .price{
     /* border: 1px solid black; */
-    line-height: 100px;
+    /* line-height: 0px; */
     height: 100px;
+    text-decoration: none;
 }
+
+.text-page p{
+    /* border: 1px solid black; */
+    font-weight: bold;
+    font-size:13px;
+    text-decoration: none;
+    text-align: right;
+}
+
+.price span{
+    /* border: 1px solid black; */
+    line-height: 120px;
+}
+
 .paging{
     /* border: 1px solid black; */
     margin-top: 530px;
@@ -185,6 +217,103 @@ main{
     text-align: center;
     font-weight: bold;
     /* background-color: #e6e6e6; */
-    border: 1px solid #0ba891;;
+    border: 1px solid #e6e6e6;
+}
+
+/*이벤트 ㄹ뷰 작성 공간*/
+.buyboxp{
+    display: none;
+}
+
+
+.buy-area-2{
+    /* border: 1px solid black; */
+    /* margin-top: 0px; */
+    height: 80px;
+    
+}
+
+.buy-text-2{
+    border: 1px solid black;
+    width: 810px;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+   
+}
+.buy-text-2 div{
+    margin-top: 12px;
+}
+
+.img-area-2{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.img-area-2 img{
+    width: 100px;
+    height: 100px;
+}
+.buy-text-area-2{
+    /* border: 1px solid black; */
+    width: 600px;
+    padding-top: 20px;
+    height: 80px;
+    font-size: 18px;
+    
+}
+.buy-text-area-2 p{
+    text-decoration: none;
+    color: black;
+  
+}
+
+.price-2{
+    /* border: 1px solid black; */
+    /* line-height: 0px; */
+    height: 100px;
+    text-decoration: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.text-page-2 p{
+    /* border: 1px solid black; */
+    font-weight: bold;
+    font-size:13px;
+    text-decoration: none;
+    text-align: right;
+}
+
+.price-2 span{
+    /* border: 1px solid black; */
+    line-height: 120px;
+}
+
+.paging1{
+    /* border: 1px solid black; */
+    margin-top: 530px;
+
+}
+.page1{
+    display: flex;
+    margin: auto;
+    /* border: 1px solid rebeccapurple; */
+    text-align: center;
+    justify-content: center;
+    /* padding: 10px; */
+}
+.page1>a{
+    border: 1px solid black;
+    margin: 5px;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    /* background-color: #e6e6e6; */
+    border: 1px solid #e6e6e6;
 }
 

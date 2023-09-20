@@ -8,13 +8,13 @@
 
 
 main{
-    /* border-top: 1px solid #bbb; */
-    /* background-color: aquamarine; */
+   
     margin-top: 45px;
-    /* background-color: #f3eeee; */
+  
 }
 
-.user-container{
+
+.container{
     width: 1024px;
     height: 100%;
     /* border: 1px solid black;   */
@@ -41,12 +41,12 @@ main{
     margin-bottom: 15px;
 }
 /* .menu-bar>div:first-child{
-  width: 180px;
-  height: 100px;
-  margin: 0;
-  border: none;
-} */
-/* .logo-img>img{
+    width: 180px;
+    height: 100px;
+    margin: 0;
+    border: none;
+  } */
+  /* .logo-img>img{
     height: 100px;
     width: 170px;
 } */
@@ -75,7 +75,9 @@ main{
     text-decoration: none;
     line-height: 40px;
     color: black;
+   
     font-family: 'IBM Plex Sans KR', sans-serif;
+    
     font-size: 25px;
     width: 150px;
     /* border-radius: 10%; */
@@ -83,16 +85,15 @@ main{
 
 .page-view{
     /* border: 1px solid black; */
-    width: 900px;
     /* background-color: blue; */
     /* margin-top: 5px; */
     margin-left: 20px;
+    width: 900px;
 }
 .page-title{
     /* border: 1px solid black; */
     height: 80px;
     border-bottom: 1px solid #bbb;
-    padding-bottom: 5px;
 }
 .page-title>p{
     margin-left: 20px;
@@ -106,114 +107,147 @@ main{
     font-family: 'IBM Plex Sans KR', sans-serif;
     font-family: 'Single Day', cursive;
     color: #FF7000;
-    /* padding: 100px; */
-    /* margin-bottom: 10px; */
-    /* border: 1px solid black; */
 }
-
 .page-title>p>a{
     text-decoration: none;
      color: #FF7000;
 }
-.updateText{
-    margin-top: 40px;
+.review-container{
     /* border: 1px solid black; */
-    height: 550px;
-    border-collapse: collapse ;
+    display: flex;
+    justify-content: center;
+}
+.new-post-form{
+    /* border: 1px solid red; */
+   /* text-align: center; */
+}
+.form-group {
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-.checkPw{
+label {
     /* border: 1px solid black; */
-    width: 300px;
-    margin-top: 5px;
-    margin-left: 210px;
-    text-align: left;
-    font-size: 12px;
-    color: red;
-    font-style: italic;
+    display: block;
+    margin-bottom: 5px;
 }
-.userInfo-area{
-    /* border: 1px solid black; */
-    height: 50px;
-    text-align: center;
-    /* width: 80px; */
-    margin-top: 20px;
-    position: relative;
-    /* border-collapse: collapse ; */
-}
-.userInfo{
-    width: 400px;
-    height: 40px;
-    margin-top: 20px;
+
+.title p{
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-left: 5px;
+    padding-bottom: 5PX;
+    height: 18px;
+    line-height: px;
     border-radius: 5px;
-}
-.userInfo-area img{
-    position : absolute;
-    width: 20px; 
-    /* width: 50px; */
-    top: 30px;
-    left: 190px;
-    margin: 0;  
+   }
+   .title span{
+    /* border: 1px solid black; */
+    font-size: 13px;
    
-}
+    } 
+   
+   .title span:nth-child(2){
+       margin-left: -5px;
+   }
 
-.addressnum{
-    /* float: left; */
-    margin-left: -170px;
-    margin-top: 20px;
-    width: 150px;
-    height: 40px;
+input[type='text'],
+textarea {
+    width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
-.addressnumbtn{
-    width: 70px;
-    height: 40px;
-    background-color: #FF7000;
-    border: 1px solid #FF7000;
-    color: white;
-    cursor: pointer;
+
+textarea {
+    resize: none;
+    /* width: 700px; */
+    height: 400px;
 }
-.addressInput{
-    margin-top: 20px;
+
+input[type='file'] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.submit-btn {
     width: 400px;
-    height: 40px;
-    border-radius: 5px;
-
-}
-#PostCodeSearch{
-    height: 40px;
-    background-color: #bbb;
-    border: 1px solid #bbb;
-    color: white;
-    cursor: pointer;
-    
-
-}
-.addressplus{
-    width: 100px;
-    height: 40px;
-    border-radius: 5px;
-
-}
-    
-.addressdetail{
-    margin-top: 20px;
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
-    
-}
-
-.buttonJoin button{
-    width : 355px;
-    height: 40px;
-    margin-top: 100px;  
-    /* cursor: pointer; */
-    color: white;
+    padding: 10px;
     background-color: #FF7000;
-    border: 0px solid black;
+    color: #fff;
+    border: none;
+    cursor: pointer;
     border-radius: 5px;
-    font-weight: 500;
+    margin: 20px 0 auto;
+    /* text-align: center; */
+    /* display: inline-block; */
+    margin-left: 100px;
+}
+
+.submit-btn:hover {
+    background-color: #FF7000;
+}
+
+
+
+.x-box::after {
+    content: 'x';
+    background-color: #FF7000;
+    color: white;
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: -5px;
+    right: -5px;
+    text-align: center;
+    line-height: 13px;
+}
+
+.grade-group{
+    /* border: 1px solid black; */
+    /* position: absolute; */
+    /* top : 350px */
+    display: flex;
+}
+
+.grade{
+    display: flex;
+    direction: rtl;
+    border:0;
+    /* border: 1px solid black; */
+    /* flex-di rection: column; */
+    /* text-align: right;     */
+}
+.text-bold{
+    margin-left: 0px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    font-size: 15px;
+    line-height: 30px;
+    height: 15px;
+    margin-right: 5px;
+}
+.grade legend{
+    text-align: right;
+}
+.grade input[type=radio]{
+    display: none;
+}
+.grade label{
     font-size: 20px;
-    margin-left: 230px;
+    color: transparent;
+    text-shadow: 0 0 0 #f0f0f0;
+}
+.grade label:hover{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+.grade label:hover ~ label{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
+}
+.grade input[type=radio]:checked ~ label{
+    text-shadow: 0 0 0 rgba(250, 208, 0, 0.99);
 }
