@@ -7,8 +7,11 @@ a{
     color: inherit;
 }
 input{
+    padding: 5px;
     border-radius: 5%;
     font-size: 16px;
+    font-weight: bold;
+    border: 2px solid rgb(189, 189, 189);
 }
 input:focus{
     outline: none;
@@ -55,8 +58,7 @@ input:focus{
 }
 
 .on{
-    background-color:#01b9ff !important;
-    color: white;
+    background-color:#01b9ff;
 }
 
 .main-container{
@@ -86,7 +88,6 @@ input:focus{
     margin-top: 5px;
     height: 100%;
 }
-
 .contents-title{
     margin: 0px 20px;
     width: 96%;
@@ -98,7 +99,6 @@ input:focus{
     color: #646464;
     font-size: 30px;
 }
-
 .admin-name{
     margin-left: auto;
     width: 50px;
@@ -117,7 +117,8 @@ input:focus{
     margin-left: auto;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-.user-main-container{
+
+.announce-list-container{
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -127,99 +128,10 @@ input:focus{
     box-shadow: 5px 5px 5px 5px gray;
     border-radius: 3%;
 }
-.top{
-    width: 100%;
-    /* margin: 0 auto; */
-    /* padding-top: 10px 10px; */
-    padding: 10px;
-    display: flex;
-    font-size: 20px;
-    width: 96%;
-    margin: 0 auto;
-    border-bottom: 3px solid #01b9ff;
-}
-.top>div{
-    font-weight: bold;
-    font-size: 21px;
-    color: #353535;
-}
 
-.top .user-num{
-    margin-right: auto;
-}
-.top .user-name{
-    margin-left: 60px;
-}
-.top .user-id{
-    margin-left: 60px;
-}
-.top .date{
-    margin-left: 100px;
-}
-.top .review{
-    margin-left: 100px;
-}
-.top .status{
-    margin-left: 100px;
-}
-.user-list{
-    height: 100%;
-}
-.user-list > div {
-    display: flex;
-    margin: 0 auto;
-    width: 98%;
-    border-bottom:1px solid #ddd;
-}
-
-.board-list > div:last-child{
-    border-bottom: 1px solid #999;
-}
-.post{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    height: 67px;
-    font-size: 18px;
-}
-
-.post>div{
-    cursor: pointer;
-}
-.post .user-num{
-    
-    width: 12%;
-
-}
-.post .user-name{
-    width: 15%;
-
-}
-.post .user-id{
-    width: 10%;
-}
-.post .date{
-    width: 29%;
-}
-.post .review{
-    width: 9%;
-}
-.post .status{
-    margin-left: auto;
-    width: 18%;
-}
-
-.user-list-bottom{
+.announce-list-bottom{
     margin-top: 10px;
     display: flex;
-}
-
-.user-search-container > form{
-    height: 90px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    padding-right: 15px;
 }
 
 form > select{
@@ -250,7 +162,8 @@ form > button{
     font-size: 18px;
     margin-top: 35px;
     margin-right: 5px;
-    width: 500%;
+    margin-left: 390px;
+    width: 40%;
 }
 
 .pagination-container a {
@@ -283,11 +196,114 @@ form > button{
     border-left: 1px solid #ddd;
 }
 
-.user-search-container{
+.announce-search-container{
     margin: auto 33px auto 30px;
     width: 35%;
 }
-.user-search-container > form>button{
+.announce-search-container > form>button{
     border: 1px solid rgb(118,118, 118);
     border-radius: 5%;
+}
+
+.on{
+    background-color:#01b9ff !important;
+    color: white;
+}
+
+a > button{
+    width: 70px;
+    height: 40px;
+    color:white;
+    background-color: #01b9ff;
+    border-radius: 10%;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.top{
+    width: 100%;
+    /* margin: 0 auto; */
+    /* padding-top: 10px 10px; */
+    padding: 10px;
+    display: flex;
+    font-size: 20px;
+    width: 96%;
+    margin: 0 auto;
+    border-bottom: 3px solid #01b9ff;
+    margin-right:auto;
+    text-align: center;
+}
+.top>div{
+    font-weight: bold;
+    font-size: 21px;
+    color: #353535;
+}
+.top .announce-num{
+    text-align: center;
+    width: 100px;
+}
+.top .announce-title{
+    text-align: center;
+    width: 400px;
+}
+.top .date{
+    text-align: center;
+    margin-left: 60px;
+}
+.top .count{
+    text-align: center;
+    margin-left: 100px;
+}
+.announce-list{
+    height: 100%;
+}
+.announce-list > div {
+    display: flex;
+    margin: 0 auto;
+    width: 98%;
+    border-bottom:1px solid #ddd;
+}
+
+.post{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 67px;
+    font-size: 18px;
+}
+
+.post>div{
+    cursor: pointer;
+}
+.post .announce-num{
+    width: 12%;
+}
+.post .announce-title{
+    width: 47%;
+
+}
+.post .date{
+    width: 19%;
+}
+.post .count{
+    width: 17%;
+}
+
+.announce-write{
+
+    margin: 35px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 25px;
+
+    background-color:#01b9ff;
+    color: white;
+    border-radius: 10%;
+    padding: 5px;
 }
